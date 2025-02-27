@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Passkey</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contacts</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <p>
+        Hello! Your security is our top priority. Access your passwords safely
+        and effortlessly without a sweat with no troubles.
+      </p><br>
+      <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+      <table>
+        <tr class="heading">
+          <td>Website</td>
+          <td>Username</td>
+          <td>Password</td>
+          <td>Delete</td>
+        </tr>
+      </table>
+      <div><p class="overlay">Copy</p></div>
+      <h2>Add Password</h2>
+      <form action="submit" method="post">
+        <!-- text input for website -->
+         <label for="website">Website:</label>
+         <input type="text" id="website"><br /><br />
+        <!-- text input for username -->
+        <label for="username">Username :</label>
+        <input type="text" id="username" /><br /><br />
+        <!-- text input for password -->
+        <label for="password">Password :</label>
+        <input type="text" id="password" /><br /><br />
+        <!-- text input for submit -->
+        <input class="submit" type="button" value="Submit" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
